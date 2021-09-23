@@ -12,6 +12,7 @@ visit the original resource :
 
 ## Preview
 
-https://catinder.vercel.app/
+<a href = "https://catinder.vercel.app/"><img src = "Screenshot_20210923-123157_Chrome.jpg"></a>
+
 
 
