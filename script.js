@@ -1,6 +1,6 @@
 url = "https://api.thecatapi.com/v1/images/search"
 
-async function Get_image_from(url){
+async function get(url){
   try{
     response = await fetch(url)
     return response.json()
@@ -10,7 +10,7 @@ async function Get_image_from(url){
 }
 
 
-Get_image_from(url).then (image => {
+get(url).then (image => {
 	document.getElementById('photo').style.backgroundImage=`url(${image[0].url})`  
 })
 
@@ -19,7 +19,7 @@ $('.button').click(function(){
   $('.photo-wrap').addClass('love');
   $('#photo').addClass('match');
   
-Get_image_from(url).then (image => {
+  get(url).then (image => {
 	document.getElementById('photo').style.backgroundImage=`url(${image[0].url})`  
 }) 
   
